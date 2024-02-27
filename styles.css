@@ -233,11 +233,8 @@ h2 {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
-    .parallax {
-       
-        min-width: 300px;
-        margin: auto;
-       
+  .parallax {
+        background-attachment: scroll;
     }
     .project-cards,
 .exp-cards, .education-cards {
@@ -287,11 +284,8 @@ h2 {
 @media screen and (max-width: 480px) {
    
 
-    .parallax {
-       
-        min-width: 200px;
-        margin: auto;
-       
+ .parallax {
+        background-attachment: scroll;
     }
 
     .project-cards,

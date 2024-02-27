@@ -234,7 +234,7 @@ h2 {
 @media screen and (max-width: 768px) {
 
     .parallax {
-       
+        height: auto;
         min-width: 300px;
         background-attachment: scroll;
        
@@ -290,6 +290,7 @@ h2 {
     .parallax {
        
         min-width: 200px;
+        height: auto;
         background-attachment: fixed;
        
     }

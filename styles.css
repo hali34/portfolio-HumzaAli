@@ -235,7 +235,7 @@ h2 {
 
     .parallax {
        
-        min-width: 200px;
+        min-width: 300px;
         background-attachment: scroll;
        
     }
@@ -289,8 +289,8 @@ h2 {
 
     .parallax {
        
-        min-width: 100 px;
-background-attachment: scroll;
+        min-width: 200px;
+        background-attachment: fixed;
        
     }
 
@@ -343,10 +343,10 @@ background-attachment: scroll;
 
 .parallax {
     /* The image used */
-    background-image: url("HumzaAli1.jpg");
+    background-image: url('HumzaAli1.jpg');
 
     /* Set a specific height */
-    min-height: 500 px;
+    min-height: 500px;
     max-width: 100%;
  margin: 0%;
     /* Create the parallax scrolling effect */
@@ -390,7 +390,7 @@ background-attachment: scroll;
 }
 
 .row {
-    padding: 10 px;
+    padding: 10px;
     color: #fff;
     margin-bottom: 5px; /* Adjust as needed */
 }

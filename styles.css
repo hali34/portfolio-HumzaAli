@@ -290,7 +290,7 @@ h2 {
     .parallax {
        
         min-width: 300px;
-        background-attachment: scroll;
+background-attachment: scroll;
        
     }
 

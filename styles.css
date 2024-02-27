@@ -343,7 +343,7 @@ background-attachment: scroll;
 
 .parallax {
     /* The image used */
-    background-image: url('HumzaAli1.jpg');
+    background-image: url("HumzaAli1.jpg");
 
     /* Set a specific height */
     min-height: 500 px;

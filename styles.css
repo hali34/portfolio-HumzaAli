@@ -105,7 +105,7 @@ h2 {
 /* Education Cards Container */
 .education-cards ,
 .project-cards,
-.exp-cards {
+.exp-cards , .cert-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -134,7 +134,7 @@ h2 {
 /* Card Hover Effect */
 .education-card:hover,
 .project-card:hover,
-.exp-card:hover {
+.exp-card:hover, .cert-card:hover {
     cursor: pointer;
 }
 
@@ -155,13 +155,13 @@ h2 {
 }
 .education-card:hover .overlay,
 .project-card:hover .overlay,
-.exp-card:hover .overlay {
+.exp-card:hover .overlay,.cert-card:hover .overlay {
     opacity: 1;
 }
 
 /* Description Content */
 .description-content,
-.expdescription-content {
+.expdescription-content, .cert-description {
     display: none; /* Initially hidden */
     background-color: #fff;
     padding: 20px;
@@ -233,11 +233,14 @@ h2 {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
-  .parallax {
-        background-attachment: scroll;
+    .parallax {
+       
+        min-width: 300px;
+        margin: auto;
+       
     }
     .project-cards,
-.exp-cards, .education-cards {
+.exp-cards, .education-cards, .cert-cards {
         display: flex;
         flex-direction: column;
     }
@@ -284,13 +287,15 @@ h2 {
 @media screen and (max-width: 480px) {
    
 
- .parallax {
-  
-        background-attachment: scroll;
+    .parallax {
+       
+        min-width: 200px;
+        margin: auto;
+       
     }
 
     .project-cards,
-    .exp-cards, .education-cards {
+    .exp-cards, .education-cards , .cert-cards{
         display: flex;
         flex-direction: column;
     }
@@ -337,7 +342,8 @@ h2 {
 }
 
 .parallax {
- background-image: url("HumzaAli1.jpg");
+    /* The image used */
+    background-image: url("HumzaAli1.jpg");
 
     /* Set a specific height */
     min-height: 500px;
@@ -447,9 +453,11 @@ h2 {
 
 
 /* Individual Education Card */
+.cert-card, 
 .exp-card,.education-card {
     width: calc(47% - 20px);
     /* Two cards per row with margin */
+    object-fit:cover; 
     margin: 10px;
     border: 1px solid #ccc;
     background-color: #fff;

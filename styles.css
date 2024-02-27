@@ -337,12 +337,11 @@ h2 {
 }
 
 .parallax {
-    /* The image used */
-    
-  background-image: url("HumzaAli.jpg");
+ background-image: url("HumzaAli1.jpg");
+
     /* Set a specific height */
     min-height: 500px;
-   
+    max-width: 100%;
  margin: 0%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

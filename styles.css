@@ -338,7 +338,7 @@ h2 {
 .parallax {
     /* The image used */
     
-
+  background-image: url("HumzaAli.jpg");
     /* Set a specific height */
     min-height: 500px;
     max-width: 100%;

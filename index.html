@@ -318,16 +318,42 @@
         <section id="cert" class="container cert">
             <br/><br/> <hr/>
             <h2>Certifications</h2>
-            <ul>
-                <li><h3>COMPTIA Security+</h3>
-                    <ul>
-                        <li>Candidate id: COMP001022238948 </li> 
-                        <li>Expiration date: 09/14/2026</li>
-                        <li><a href="https://www.credly.com/badges/8347a041-b5f4-49fe-bb5b-1e951b07b7b5/public_url"> Verify</a></li>
-                </ul></li>
-            </ul>
+          
             <br/><br/>
         </section>
+
+ <!-- Certification Descriptions Section -->
+ <section id="certdescription" class="container about">
+    <div class="cert-description" id="descriptioncert1" style="display: none;">
+        <button class="close-button slow-close" onclick="closeCertDescription('descriptioncert1')">Close</button>
+        <!-- Details of the certification 1 -->
+        <ul>
+            <li><h3>COMPTIA Security+</h3>
+                <ul>
+                    <li>Candidate id: COMP001022238948 </li> 
+                    <li>Expiration date: 09/14/2026</li>
+                    <li><a href="https://www.credly.com/badges/8347a041-b5f4-49fe-bb5b-1e951b07b7b5/public_url"> Verify</a></li>
+            </ul></li>
+        </ul>
+        <br/><br/>
+    </div>
+    <!-- Add more certification descriptions here -->
+</section>
+        <section id="certifications" class="container about">
+         
+            <div class="cert-cards">
+                <div class="cert-card" id="cert1" onclick="showCertDescription('descriptioncert1')">
+                    <img class="image" src="cert.png" alt="Certificate 1">
+                    <div class="overlay">
+                        <p>COMPTIA Security+</p>
+                    </div>
+                </div>
+                <!-- Add more certification cards here -->
+            </div>
+        </section>
+        
+       
+        
 
 
 
@@ -579,6 +605,42 @@ const skill4 = ["Security+", "TroubleShooting", "TechnicalSupport"];
 
 
 
+        function showCertDescription(descriptionId) {
+            // Hide all description sections
+            document.querySelectorAll('.description-content').forEach(desc => {
+                desc.style.display = 'none';
+            });
+            // Show the selected description
+            document.getElementById(descriptionId).style.display = 'block';
+        }
+    
+        function closeCertDescription(descriptionId) {
+            // Hide the corresponding description
+            document.getElementById(descriptionId).style.display = 'none';
+            
+          
+        }
+
+   const certcard = document.querySelectorAll('.cert-card');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove any existing description sections
+                document.querySelectorAll('.description').forEach(desc => {
+                    desc.remove();
+                });
+        
+                // Toggle active class to resize and reposition project cards
+                projectCards.forEach(card => card.classList.remove('active'));
+                card.classList.add('active');
+        
+                // Create and append description section
+                const description = document.createElement('div');
+                description.classList.add('description');
+                description.innerHTML = card.querySelector('.cert-content').innerHTML;
+                card.appendChild(description);
+            });
+        });
 
 document.addEventListener("DOMContentLoaded", function() {
     // Add an event listener to toggle dropdown on click for tablets and mobiles

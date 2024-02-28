@@ -233,9 +233,14 @@ h2 {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
+    .parallax img{
+
+        display: flex;
+        object-fit: cover;
+    }
     .parallax {
-        height: auto;
-        min-width: 100px;
+       
+        min-width: 300px;
         background-attachment: scroll;
        
     }
@@ -289,12 +294,15 @@ h2 {
 
     .parallax {
        
-        min-width: 100px;
-        height: auto;
+        min-width: 200px;
         background-attachment: fixed;
        
     }
+.parallax img{
 
+    display: flex;
+    object-fit: cover;
+}
     .project-cards,
     .exp-cards, .education-cards , .cert-cards{
         display: flex;
@@ -355,6 +363,9 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.parallax img{
+    display: none;
 }
 
 /* Add this CSS to style the close button */

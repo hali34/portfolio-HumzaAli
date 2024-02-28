@@ -235,8 +235,9 @@ h2 {
 
     .parallax img{
 
-        display: flex;
-        object-fit: cover;
+        display:block;
+        object-fit: contain;
+        
     }
     .parallax {
        

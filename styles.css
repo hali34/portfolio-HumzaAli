@@ -235,15 +235,18 @@ h2 {
 
     .parallax img{
 
-        display:block;
+       display: block;
+
         
-        width: 100%;
-        height: auto;
-        max-height: 100%; /* Optional: ensures the image does not exceed the height of its container */
+        /* Optional: ensures the image does not exceed the height of its container */
  
     }
     .parallax {
-       
+         display:flex;
+         object-fit: contain;
+         width: 100%;
+         height: auto;
+         max-height: 100%;
         min-width: 300px;
         background-attachment: scroll;
        
@@ -306,11 +309,7 @@ h2 {
      
   
     }
-.parallax img{
 
-    display: flex;
-    object-fit: cover;
-}
     .project-cards,
     .exp-cards, .education-cards , .cert-cards{
         display: flex;
@@ -497,5 +496,4 @@ h2 {
     padding: 20px;
     border-radius: 10px;
 }
-
 

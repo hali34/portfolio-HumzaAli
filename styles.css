@@ -235,13 +235,14 @@ h2 {
 
     .paraimg{
 
-       display: block;
+       display: none;
 
         
         /* Optional: ensures the image does not exceed the height of its container */
  
     }
     .parallax {
+        display: none;
          display:flex;
          object-fit: contain;
          object-position: center;
@@ -307,7 +308,7 @@ h2 {
 
     .paraimg{
 
-        display:block;
+        display:none;
         
             width: 100%;
             height: auto;
@@ -317,6 +318,7 @@ h2 {
     }
 
     .parallax {
+        display:  none;
         display:flex;
         object-fit: contain;
         width: 50%;

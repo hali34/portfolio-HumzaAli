@@ -236,8 +236,11 @@ h2 {
     .parallax img{
 
         display:block;
-        object-fit: contain;
-        max-width: (45%-20px);
+        
+        width: 100%;
+        height: auto;
+        max-height: 100%; /* Optional: ensures the image does not exceed the height of its container */
+ 
     }
     .parallax {
        
@@ -296,8 +299,12 @@ h2 {
     .parallax img{
 
         display:block;
-        object-fit: contain;
-        max-width: (45%-20px);
+        
+            width: 100%;
+            height: auto;
+            max-height: 100%; /* Optional: ensures the image does not exceed the height of its container */
+     
+  
     }
 .parallax img{
 
@@ -490,4 +497,5 @@ h2 {
     padding: 20px;
     border-radius: 10px;
 }
+
 

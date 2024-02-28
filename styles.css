@@ -271,12 +271,12 @@ h2 {
 
     
     .desktop-nav {
-        display: none;
+        display: block;
     }
 
     /* Show dropdown navigation */
     .dropdown {
-        display: block;
+        display: none;
         border: #C8A353;
     }
 
@@ -342,12 +342,12 @@ h2 {
         margin-bottom: 10px;
     }
     .desktop-nav {
-        display: none;
+        display: block;
     }
 
     /* Show dropdown navigation */
     .dropdown {
-        display: block;
+        display: none;
         border: #C8A353;
     }
 

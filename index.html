@@ -650,11 +650,16 @@ const skill4 = ["Security+", "TroubleShooting", "TechnicalSupport"];
             });
         });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Add an event listener to toggle dropdown on click for tablets and mobiles
     document.querySelector('.dropbtn').addEventListener('click', function() {
         const dropdownContent = document.querySelector('.dropdown-content');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        // Toggle the display of dropdown content
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
     });
 });
 

@@ -233,7 +233,7 @@ h2 {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
-    .parallax img{
+    .paraimg{
 
        display: block;
 
@@ -244,6 +244,7 @@ h2 {
     .parallax {
          display:flex;
          object-fit: contain;
+         object-position: center;
          width: 50%;
          height: auto;
          max-height: 100%;
@@ -304,7 +305,7 @@ h2 {
 @media screen and (max-width: 480px) {
    
 
-    .parallax img{
+    .paraimg{
 
         display:block;
         
@@ -387,7 +388,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax img{
+.paraimg,  img
+{
     display: none;
 }
 

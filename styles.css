@@ -274,32 +274,9 @@ h2 {
         display: block;
     }
 
-    /* Show dropdown navigation */
-    .dropdown {
-        display: none;
-        border: #C8A353;
-    }
+  
 
-    /* Hide dropdown content by default */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #77acba;
-        min-width: 160px;
-        z-index: 1;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    /* Show the dropdown content when the dropdown button is clicked */
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-
+    
 }
 
 /* Mobile */
@@ -319,15 +296,7 @@ h2 {
 
     .parallax {
         display:  none;
-        display:flex;
-        object-fit: contain;
-        width: 50%;
-        height: auto;
-        max-height: 100%;
-       max-width: 100px;
-       background-attachment: scroll;
-      
-   }
+    }
     .project-cards,
     .exp-cards, .education-cards , .cert-cards{
         display: flex;
@@ -345,35 +314,7 @@ h2 {
         display: block;
     }
 
-    /* Show dropdown navigation */
-    .dropdown {
-        display: none;
-        border: #C8A353;
-    }
-
-    /* Hide dropdown content by default */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #77acba;
-        min-width: 160px;
-        z-index: 1;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    /* Show the dropdown content when the dropdown button is clicked */
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-
-    .skill-bar span {
-        font-size: 12px;
-    }
+  
 }
 
 .parallax {

@@ -54,7 +54,16 @@
         <section id="about" class="container about">
             <br/><br/>
             <h2>About Me</h2>
-            <p>I am and eager student at george mason university, completing my bachelors in Information Technology with a concentration in cyber security. My career goals are  <b><span id="profession">Software developer looking to gain experience in IT</span></b> This website portfolio is made by me to demonstrate my familiarity with programming as well as an overview of my experience, project, education and certifications.</p>
+            <p>About
+• 2 years of experience specializing in Cyber Security with a focus on Web Application Penetration Testing and APIs.
+• Proficient with security tools including Burp Suite, Hydra, DirBuster, SQLMap, Nmap, Nessus, Filezilla, Checkmarx, WebInspect, OWASP ZAP, Nexus IQ Server, and Metasploit for comprehensive vulnerability assessments and penetration testing.
+• In-depth knowledge of security frameworks and risk methodologies such as OWASP Top 10, CVSS, and CWE.
+• Experienced in creating, designing, and managing SQL databases.
+• Proficient in leveraging AWS Cloud resources such as EC2, S3 buckets, and cloud networking for secure and efficient environments.
+• Skilled in developing automated tools using Python and Java for enhanced efficiency and accuracy in security tasks.
+• Capable of performing log analysis and visualization using Splunk to identify trends and anomalies.
+• Self-directed professional able to deliver under limited supervision and tight schedules.
+• Excellent communication, analytical, and problem-solving skills, supported by strong capabilities in coordination, documentation, project planning, and interpersonal relations.</p>
         </section>
 
         <section id="skills" class="container about">
@@ -63,16 +72,29 @@
             <h2>Skills</h2>
             <br/>
             <div class="skill-bar">
-                <span data-width="100%" style="background-color: #333; "><span class="sp" id="skill1">HTML/CSS </span></span>
+                <span data-width="100%" style="background-color: #333; "><span class="sp" id="skill1">Pentesting</span></span>
             </div>
             <div class="skill-bar">
-                <span data-width="90%" style="background-color: #333;"><span class="sp" id="skill2">JavaScript </span></span>
+                <span data-width="90%" style="background-color: #333;"><span class="sp" id="skill2">APPSEC</span></span>
             </div>
             <div class="skill-bar">
-                <span data-width="60%" style="background-color: #333;"><span class="sp" id="skill3">Python </span></span>
+                <span data-width="90%" style="background-color: #333;"><span class="sp" id="skill3">Burpsuite</span></span>
             </div>
             <div class="skill-bar">
-                <span data-width="70%" style="background-color: #333; color: white;"><span class="sp" id="skill4">Cyber Security </span></span>
+                <span data-width="70%" style="background-color: #333; color: white;"><span class="sp" id="skill4">OWASP ZAP</span></span>
+            </div>
+
+            <div class="skill-bar">
+                <span data-width="100%" style="background-color: #333; "><span class="sp" id="skill1">SQLMAP</span></span>
+            </div>
+            <div class="skill-bar">
+                <span data-width="90%" style="background-color: #333;"><span class="sp" id="skill2">DIRB</span></span>
+            </div>
+            <div class="skill-bar">
+                <span data-width="60%" style="background-color: #333;"><span class="sp" id="skill3">OWASP AMASS</span></span>
+            </div>
+            <div class="skill-bar">
+                <span data-width="70%" style="background-color: #333; color: white;"><span class="sp" id="skill4">MetaSploit</span></span>
             </div>
             <br/><br/>
         </section>
@@ -540,16 +562,7 @@
             });
         });
         
-        // Dynamic changing profession
-        const professions = ["cyber security looking for Cyber Roles", "data analytics to breakthrough in Data Analyst positions", "Software developer looking to gain experience in IT"];
-        let currentProfessionIndex = 0;
-        const professionElement = document.getElementById('profession');
         
-        setInterval(() => {
-            currentProfessionIndex = (currentProfessionIndex + 1) % professions.length;
-            professionElement.textContent = professions[currentProfessionIndex];
-        }, 5000);
-
 
         document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', animateSkills);
@@ -572,33 +585,7 @@ function animateSkills() {
 
 
 
-const skill1 = ["Java", "HTML", "Linux", "ISO-Model"];
-const skill2 = ["TicketingTriage", "NetworkingPrinciple", "Python(Programming)"];
-const skill3 = ["Javascript", "TroubleShooting", "TechnicalSupport"];
-const skill4 = ["Security+", "TroubleShooting", "TechnicalSupport"];
-        let currentskillIndex = 0;
-        const skillElement1 = document.getElementById('skill1');
-        const skillElement2 = document.getElementById('skill2');   
-        const skillElement3 = document.getElementById('skill3');
-        const skillElement4 = document.getElementById('skill4');
 
-        setInterval(() => {
-            currentskillIndex = (currentskillIndex + 1) % skill1.length;
-           skillElement1.textContent = skill1[currentskillIndex];
-        }, 5000);
-
-        setInterval(() => {
-            currentskillIndex = (currentskillIndex + 1) % skill2.length;
-           skillElement2.textContent = skill2[currentskillIndex];
-        }, 5000);
-        setInterval(() => {
-            currentskillIndex = (currentskillIndex + 1) % skill3.length;
-           skillElement3.textContent = skill3[currentskillIndex];
-        }, 5000);
-        setInterval(() => {
-            currentskillIndex = (currentskillIndex + 1) % skill4.length;
-           skillElement4.textContent = skill4[currentskillIndex];
-        }, 5000);
 
 
 
